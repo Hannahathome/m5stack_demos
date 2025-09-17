@@ -6,7 +6,7 @@
 #define JOY_ADDR   0x52
 #define CARDKB_ADDR 0x5F
 
-// blcok/player location and colour 
+// block/player location and colour 
 int playerX = 160, playerY = 120;
 uint16_t playerColor = RED;
 
@@ -48,6 +48,9 @@ void setup() {
 void loop() {
   M5.update();
 
+  // Track if anything changed this frame
+  bool needsRedraw = false;
+
   // read joystick
   static uint8_t joyX=0, joyY=0, joyBtn=0;
   Wire.requestFrom(JOY_ADDR, 3);
@@ -63,12 +66,20 @@ void loop() {
   if (abs(joyX - joyCenterX) > deadzone) moveX = map(joyX, 0, 255, 5, -5);
   if (abs(joyY - joyCenterY) > deadzone) moveY = map(joyY, 0, 255, -5, 5);
 
-  playerX = constrain(playerX + moveX, 0, 300);
-  playerY = constrain(playerY + moveY, 20, 220);
+  int newPlayerX = constrain(playerX + moveX, 0, 300);
+  int newPlayerY = constrain(playerY + moveY, 20, 220);
+
+  // Check if position changed
+  if (newPlayerX != playerX || newPlayerY != playerY) {
+    playerX = newPlayerX;
+    playerY = newPlayerY;
+    needsRedraw = true;
+  }
 
   // Joystick button toggles color
   if (joyBtn == 0 && lastJoyBtn == 1) {
     playerColor = (playerColor == RED) ? BLUE : RED;
+    needsRedraw = true;
     Serial.println("Joystick button pressed: color toggled");
   }
   lastJoyBtn = joyBtn;
@@ -80,35 +91,66 @@ void loop() {
       char c = Wire.read();
       if (c != 0) {
         Serial.printf("CardKB key: %c (0x%02X)\n", c, c);
+        bool playerMoved = false;
 
         // Handle controls
-        if (c == 'w' || c == 'W') playerY = max(20, playerY - 5);
-        else if (c == 's' || c == 'S') playerY = min(220, playerY + 5);
-        else if (c == 'a' || c == 'A') playerX = max(0, playerX - 5);
-        else if (c == 'd' || c == 'D') playerX = min(300, playerX + 5);
+        if (c == 'w' || c == 'W') {
+          int newY = max(20, playerY - 5);
+          if (newY != playerY) {
+            playerY = newY;
+            playerMoved = true;
+          }
+        }
+        else if (c == 's' || c == 'S') {
+          int newY = min(220, playerY + 5);
+          if (newY != playerY) {
+            playerY = newY;
+            playerMoved = true;
+          }
+        }
+        else if (c == 'a' || c == 'A') {
+          int newX = max(0, playerX - 5);
+          if (newX != playerX) {
+            playerX = newX;
+            playerMoved = true;
+          }
+        }
+        else if (c == 'd' || c == 'D') {
+          int newX = min(300, playerX + 5);
+          if (newX != playerX) {
+            playerX = newX;
+            playerMoved = true;
+          }
+        }
         else if (c == ' ') {
           playerColor = (playerColor == RED) ? BLUE : RED;
+          needsRedraw = true;
           Serial.println("CardKB Space pressed: color toggled");
         }
+
+        if (playerMoved) needsRedraw = true;
 
         // Keep last 20 keys
         kbLog += c;
         if (kbLog.length() > 20) kbLog.remove(0, kbLog.length() - 20);
+        needsRedraw = true; // Text changed, need redraw
       }
     }
   }
 
-  // --- Draw ---
-  M5.Lcd.fillScreen(BLACK);
-  M5.Lcd.fillRect(playerX, playerY, 20, 20, playerColor);
+  // --- Draw only if something changed ---
+  if (needsRedraw) {
+    M5.Lcd.fillScreen(BLACK);
+    M5.Lcd.fillRect(playerX, playerY, 20, 20, playerColor);
 
-  M5.Lcd.setTextSize(1);
-  M5.Lcd.setTextColor(WHITE, BLACK);
-  M5.Lcd.setCursor(5, 5);
-  M5.Lcd.printf("JX:%3d JY:%3d JB:%d", joyX, joyY, joyBtn);
+    M5.Lcd.setTextSize(1);
+    M5.Lcd.setTextColor(WHITE, BLACK);
+    M5.Lcd.setCursor(5, 5);
+    M5.Lcd.printf("JX:%3d JY:%3d JB:%d", joyX, joyY, joyBtn);
 
-  M5.Lcd.setCursor(5, 20);
-  M5.Lcd.printf("Keys: %s", kbLog.c_str());
+    M5.Lcd.setCursor(5, 20);
+    M5.Lcd.printf("Keys: %s", kbLog.c_str());
+  }
 
   delay(30);
 }
