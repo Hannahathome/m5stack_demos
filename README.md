@@ -1,35 +1,50 @@
-Example codes for m5stack + paper voxels demo 
+# Example Codes for M5Stack + Paper Voxels Demo  
+This repository contains Arduino example codes for three creative systems you can build using **M5Stack units**, combined with **LEGO** and **paper**.  
+The examples range from **games** to **musical instruments** and even a **personal health system**.  
 
-In this repository, you will find the arduino codes for three systems you can make using m5stack units in combination with lego and paper. The examples range from games, music insturments and personal health systems.
+## Example 1: Game 
+**Units used:**  
+- M5Core2  
+- Unit Joystick  
+- Unit Button  
+- Grove Hub  
 
-Example 1: game using Joystick + button
-Units used:
-- M5core2
-- Unit Joystick
-- Unit Button
-- Grove Hub
+**Description:**  
+Control a block with the joystick and change its color by pressing the button.  
+This simple setup is perfect as a starting point for puzzle-style games.  
 
-Description: control your block with your joystick, change colour by pressing the button. the basic setup for simple puzzle games. 
+**example 1+ -->** Add a second player by plugging in the CardKB unit!  
 
-Example 1+ Add another player by plugging in the CardKB unit.
+## Example 2: Mini theremin  
+**Units used:**  
+- M5Core2  
+- Unit Joystick  
+- Unit Heart  
 
+**Description:**  
+A theremin is an electronic instrument played without touch. In this version:  
+- The **heart rate sensor** controls the frequency  
+- The **joystick** controls the amplitude  
 
-Example 2: mini theremin 
-Units used: 
-- M5core2
-- Unit Joystick
-- Unit Heart
+Experiment with sound and have fun making music on this compact digital instrument!  
 
-Description: A theremin is an electronic musical instrument controlled without physical contact, so, using the heartreate unit to control the frequency and the joystick to control the amplitude and have som efun creating sounds on this small musical instrument
+## Example 3: Snack Tracker  
+**Units used:**  
+- M5Core2  
+- Unit Scale  
+- Unit Button  
 
+**Description:**  
+Keep track of your snacks with this smart snack tracker. The system constantly weighs your snack bowl.  
 
-Example 3: snack tracker 
-Units used: 
-- M5core2
-- Unit scale
-- Unit button
+Option 1: Tracking your snacks
+- Want to understand when and how much you snack througout the day? Let thissimple system track your snack consumption throughout the day.
+- Each time to crave a snack but do not eat it, press the button.
+- Each time you want a snack, just take it from the scale
+At the end of the day, you can see your stats and timeline, showing how much weight in snacks was eaten, and how often you decided against eating a snack. 
 
-Description: 
-Keep track of your snacks using the snack tracker, a scale that weighs your snacks constantly. want to get some snacks? take them out of the bowl and press the hidden button to let the system know its you. If snacks are taken without a button press within 30s, an alarm will sound and the screen will turn red, alerting you of the snack thief! 
+Option 2: Snack thief
+Have someone around your house or office eating your snacks? Build this to keep them at bay. 
+- Want a snack? Take some out and press the hidden button to let the system know it’s you.  
+- If snacks are removed **without a button press** within 30 seconds, an alarm will sound and the screen will flash red—alerting you to the **snack thief**!  
 
-  
