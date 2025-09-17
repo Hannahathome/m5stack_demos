@@ -48,3 +48,6 @@ Have someone around your house or office eating your snacks? Build this to keep 
 - Want a snack? Take some out and press the hidden button to let the system know it’s you.  
 - If snacks are removed **without a button press** within 30 seconds, an alarm will sound and the screen will flash red to snitch on the **snack thief**!  
 
+
+## Basics to get started
+
