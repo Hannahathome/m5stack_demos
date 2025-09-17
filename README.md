@@ -80,4 +80,6 @@ From within the wanted example:
 1. `cd` into the example that you want to build and upload
 2. `arduino-cli compile --fqbn esp32:esp32:m5stack-core-esp32`
 3. Figure out what port you need to use `arduino-cli board list`
-4. `arduino-cli upload --fqbn esp32:esp32:m5stack-core-esp32 --port <YOUR COM PORT HERE>`    
+4. `arduino-cli upload --fqbn esp32:esp32:m5stack-core-esp32 --port <YOUR COM PORT HERE>`
+
+To build and upload in the same command, use `arduino-cli compile --fqbn esp32:esp32:m5stack-core-esp32 --upload --port <YOUR COM PORT HERE> --verbose --build-path ./build`
