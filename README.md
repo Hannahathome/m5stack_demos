@@ -34,7 +34,7 @@ Experiment with sound and have fun making music on this compact digital instrume
 ## Example 3: Snack Tracker  
 **Units used:**  
 - M5Core / Basic 
-- Unit Scale  
+- Unit Mini Scales  
 - Unit Button
 - Unit Hub/ Grove Hub  
 
