@@ -46,5 +46,5 @@ At the end of the day, you can see your stats and timeline, showing how much wei
 Option 2: Snack thief
 Have someone around your house or office eating your snacks? Build this to keep them at bay. 
 - Want a snack? Take some out and press the hidden button to let the system know it’s you.  
-- If snacks are removed **without a button press** within 30 seconds, an alarm will sound and the screen will flash red—alerting you to the **snack thief**!  
+- If snacks are removed **without a button press** within 30 seconds, an alarm will sound and the screen will flash red to snitch on the **snack thief**!  
 
