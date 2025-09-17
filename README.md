@@ -53,14 +53,14 @@ Have someone around your house or office eating your snacks? Build this to keep 
 
 Sizes of Different Units  
 
-| Unit              | Dimensions (mm)     | Documentation Link |
-|-------------------|---------------------|--------------------|
-| M5Core/Basic      | 54 × 54 × 17        | [Docs](https://docs.m5stack.com/en/core/basic) |
-| M5Core2           | 54 × 54 × 16.5      | [Docs](https://docs.m5stack.com/en/core/core2) |
-| Unit Mini Scales  | 40 × 24 × 18        | [Docs](https://docs.m5stack.com/en/unit/Unit-Mini%20Scales) |
-| Unit Button       | 32 × 24 × 8         | [Docs](https://docs.m5stack.com/en/unit/button) |
-| Unit Heart        | 32 × 24 × 8         | [Docs](https://docs.m5stack.com/en/unit/heart) |
-| Unit Joystick     | 48 × 24 × 32        | [Docs](https://docs.m5stack.com/en/unit/joystick_1.1) |
-| Unit Hub          | 32 × 24 × 10.8      | [Docs](https://docs.m5stack.com/en/unit/hub) |
+| Unit                     | Dimensions (mm)     | Documentation Link |
+|--------------------------|---------------------|--------------------|
+| M5Core / Basic           | 54 × 54 × 17        | [Docs](https://docs.m5stack.com/en/core/basic) |
+| M5Core2                  | 54 × 54 × 16.5      | [Docs](https://docs.m5stack.com/en/core/core2) |
+| Unit Mini Scales         | 40 × 24 × 18        | [Docs](https://docs.m5stack.com/en/unit/Unit-Mini%20Scales) |
+| Unit Button              | 32 × 24 × 8         | [Docs](https://docs.m5stack.com/en/unit/button) |
+| Unit Heart               | 32 × 24 × 8         | [Docs](https://docs.m5stack.com/en/unit/heart) |
+| Unit Joystick            | 48 × 24 × 32        | [Docs](https://docs.m5stack.com/en/unit/joystick_1.1) |
+| Unit Hub / Grove Hub     | 32 × 24 × 10.8      | [Docs](https://docs.m5stack.com/en/unit/hub) |
 
 
