@@ -52,11 +52,11 @@ Have someone around your house or office eating your snacks? Build this to keep 
 ## Useful information for designing new enclosures
 
 Sizes of different units:
-M5Core/Basic       54 × 54 × 17 mm       https://docs.m5stack.com/en/core/basic
-M5Core2            54 x 54 x 16.5 mm     https://docs.m5stack.com/en/core/core2
-Unit Mini Scales   40 x 24 x 18 mm       https://docs.m5stack.com/en/unit/Unit-Mini%20Scales   
-Unit Button        32 x 24 x 8 mm        https://docs.m5stack.com/en/unit/button
-Unit Heart         32 x 24 x 8 mm        https://docs.m5stack.com/en/unit/heart
-Unit Joystick      48 x 24 x 32 mm       https://docs.m5stack.com/en/unit/joystick_1.1
-Unit Hub           32 x 24 x 10.8 mm     https://docs.m5stack.com/en/unit/hub    
+- M5Core/Basic       54 × 54 × 17 mm       https://docs.m5stack.com/en/core/basic
+- M5Core2            54 x 54 x 16.5 mm     https://docs.m5stack.com/en/core/core2
+- Unit Mini Scales   40 x 24 x 18 mm       https://docs.m5stack.com/en/unit/Unit-Mini%20Scales   
+- Unit Button        32 x 24 x 8 mm        https://docs.m5stack.com/en/unit/button
+- Unit Heart         32 x 24 x 8 mm        https://docs.m5stack.com/en/unit/heart
+- Unit Joystick      48 x 24 x 32 mm       https://docs.m5stack.com/en/unit/joystick_1.1
+- Unit Hub           32 x 24 x 10.8 mm     https://docs.m5stack.com/en/unit/hub    
 
