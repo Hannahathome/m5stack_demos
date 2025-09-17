@@ -51,7 +51,7 @@ Have someone around your house or office eating your snacks? Build this to keep 
 
 ## Useful information for designing new enclosures
 
-## Sizes of Different Units  
+Sizes of Different Units  
 
 | Unit              | Dimensions (mm)     | Documentation Link |
 |-------------------|---------------------|--------------------|
