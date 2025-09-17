@@ -7,7 +7,7 @@ The examples range from **games** to **musical instruments** and even a **person
 - M5Core2  
 - Unit Joystick  
 - Unit Button  
-- Grove Hub  
+- Unit Hub/ Grove Hub  
 
 **Description:**  
 Control a block with the joystick and change its color by pressing the button.  
@@ -15,10 +15,12 @@ This simple setup is perfect as a starting point for puzzle-style games.
 
 **example 1+ -->** Add a second player by plugging in the CardKB unit!  
 
+---
 ## Example 2: Mini theremin  
 **Units used:**  
 - M5Core2  
-- Unit Joystick  
+- Unit Joystick
+- Unit Hub/ Grove Hub  
 - Unit Heart  
 
 **Description:**  
@@ -28,11 +30,13 @@ A theremin is an electronic instrument played without touch. In this version:
 
 Experiment with sound and have fun making music on this compact digital instrument!  
 
+---
 ## Example 3: Snack Tracker  
 **Units used:**  
-- M5Core2  
+- M5Core / Basic 
 - Unit Scale  
-- Unit Button  
+- Unit Button
+- Unit Hub/ Grove Hub  
 
 **Description:**  
 Keep track of your snacks with this smart snack tracker. The system constantly weighs your snack bowl.  
@@ -48,8 +52,9 @@ Have someone around your house or office eating your snacks? Build this to keep 
 - Want a snack? Take some out and press the hidden button to let the system know it’s you.  
 - If snacks are removed **without a button press** within 30 seconds, an alarm will sound and the screen will flash red to snitch on the **snack thief**!  
 
-
-## Useful information for designing new enclosures
+---
+---
+# Useful information for designing new enclosures
 
 | Unit                     | Dimensions (mm)     | Documentation Link |
 |--------------------------|---------------------|--------------------|
