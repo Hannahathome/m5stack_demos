@@ -53,7 +53,7 @@ Have someone around your house or office eating your snacks? Build this to keep 
 - If snacks are removed **without a button press** within 30 seconds, an alarm will sound and the screen will flash red to snitch on the **snack thief**!  
 
 ---
----
+
 # Useful information for designing new enclosures
 
 | Unit                     | Dimensions (mm)     | Documentation Link |
@@ -66,4 +66,18 @@ Have someone around your house or office eating your snacks? Build this to keep 
 | Unit Joystick            | 48 × 24 × 32        | [Docs](https://docs.m5stack.com/en/unit/joystick_1.1) |
 | Unit Hub / Grove Hub     | 32 × 24 × 10.8      | [Docs](https://docs.m5stack.com/en/unit/hub) |
 
+---
 
+# How to build
+## Prepare you computer:
+1. `choco install arduino-cli`
+2. `arduino-cli core update-index`
+3. `arduino-cli core install esp32:esp32@2.0.11`
+4. `arduino-cli lib install M5Core2`
+`
+## Build the program
+From within the wanted example:
+1. `cd` into the example that you want to build and upload
+2. `arduino-cli compile --fqbn esp32:esp32:m5stack-core-esp32`
+3. Figure out what port you need to use `arduino-cli board list`
+4. `arduino-cli upload --fqbn esp32:esp32:m5stack-core-esp32 --port <YOUR COM PORT HERE>`    
