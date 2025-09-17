@@ -4,16 +4,19 @@ The examples range from **games** to **musical instruments** and even a **person
 
 ## Example 1: Game 
 **Units used:**  
-- M5Core2  
+- M5Core
 - Unit Joystick  
-- Unit Button  
+- Unit Encoder  
 - Unit Hub/ Grove Hub  
 
 **Description:**  
-Control a block with the joystick and change its color by pressing the button.  
+Control a block with the joystick and change its size using the rotary encoder. Change the colour by using the button in each controller.  
 This simple setup is perfect as a starting point for puzzle-style games.  
 
+_Example name: ._ 
+
 **example 1+ -->** Add a second player by plugging in the CardKB unit!  
+_Example name: ._ 
 
 ---
 ## Example 2: Mini theremin  
@@ -83,3 +86,6 @@ From within the wanted example:
 4. `arduino-cli upload --fqbn esp32:esp32:m5stack-core-esp32 --port <YOUR COM PORT HERE>`
 
 To build and upload in the same command, use `arduino-cli compile --fqbn esp32:esp32:m5stack-core-esp32 --upload --port <YOUR COM PORT HERE> --verbose --build-path ./build`
+
+
+
