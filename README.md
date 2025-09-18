@@ -68,6 +68,7 @@ Have someone around your house or office eating your snacks? Build this to keep 
 | Unit Heart               | 32 × 24 × 8         | [Docs](https://docs.m5stack.com/en/unit/heart) |
 | Unit Joystick            | 48 × 24 × 32        | [Docs](https://docs.m5stack.com/en/unit/joystick_1.1) |
 | Unit Hub / Grove Hub     | 32 × 24 × 10.8      | [Docs](https://docs.m5stack.com/en/unit/hub) |
+| Unit Encoder             | 32 × 24 × 22        | [Docs](https://docs.m5stack.com/en/unit/encoder) |
 
 ---
 
